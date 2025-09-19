@@ -338,7 +338,7 @@ class PdfOrderReturn extends \TCPDF
         
         <p><strong>Perché puoi rendere un prodotto?</strong></p>
         <ul>
-            <li>non sei soddisfatto dellavestibilità;</li>
+            <li>non sei soddisfatto della vestibilità;</li>
             <li>la taglia non va bene;</li>
             <li>il colore non ti piace;</li>
             <li>il tessuto non ti soddisfa;</li>
