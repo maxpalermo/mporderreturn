@@ -1,0 +1,240 @@
+.text-white {
+    color: #fefefe !important;
+}
+
+.text-white:hover {
+    color: rgb(255, 242, 184) !important;
+}
+
+.text-black {
+    color: #303030 !important;
+}
+
+.text-black:hover {
+    color: #606060 !important;
+}
+
+.text-red {
+    color: #e45252 !important;
+}
+
+.text-red:hover {
+    color: #eb8e8e !important;
+}
+
+.text-blue {
+    color: #428ab9 !important;
+}
+
+.text-blue:hover {
+    color: #6898b8 !important;
+}
+
+.text-green {
+    color: #2ece51 !important;
+}
+
+.text-green:hover {
+    color: #5dce75 !important;
+}
+
+.process-icon-euro:before {
+    content: "\f153";
+}
+
+.process-icon-menu:before {
+    content: "\f0c9";
+}
+
+.process-icon-barcode:before {
+    content: "\f02a";
+}
+
+.process-icon-packages:before {
+    content: "\f187";
+}
+
+.process-icon-times:before {
+    content: "\f00d";
+    color: red;
+}
+
+.process-icon-address:before {
+    content: "\f2bc";
+    color: #2ece51;
+}
+
+.process-icon-address:hover:before {
+    content: "\f2bc";
+    color: rgb(93, 184, 128);
+}
+
+
+.icon-AdminMpMassImport:before {
+    content: "\f187";
+    color: #428ab9 !important;
+}
+
+.icon-hand-right:before {
+    content: "\f0a4";
+}
+
+.icon-hand-left:before {
+    content: "\f0a5";
+}
+
+.icon-hand-up:before {
+    content: "\f0a6";
+}
+
+.icon-hand-down:before {
+    content: "\f0a7";
+}
+
+.icon-AdminMpLangImport:before {
+    content: "\f0e6";
+    color: #feffd0;
+}
+
+#subtab-AdminMpMassImportProducts a:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f07a";
+    color: #fefefe;
+    margin-right: 4px;
+}
+
+#subtab-AdminMpMassImportEan13 a:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f02a";
+    color: #f1eaa7 !important;
+    margin-right: 4px;
+}
+
+#subtab-AdminMpMassImportPrices a:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f201";
+    color: #ff764c !important;
+    margin-right: 4px;
+}
+
+#subtab-AdminMpMassImportAttributes a:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f1b3";
+    color: #85b5fc !important;
+    margin-right: 4px;
+}
+
+#subtab-AdminMpMassImportFeatures a:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f1b3";
+    color: #eea3e8 !important;
+    margin-right: 4px;
+}
+
+#subtab-AdminMpMassImportCombinations a:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f1b3";
+    color: #5ce685 !important;
+    margin-right: 4px;
+}
+
+#subtab-AdminMpMassImportIsacco a:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f1c0";
+    color: #ebebeb !important;
+    margin-right: 4px;
+}
+
+#subtab-AdminMpMassExport a:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f093";
+    color: #ff3535 !important;
+    margin-right: 4px;
+}
+
+#subtab-AdminMpMassUpdateProducts a:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f044";
+    color: #fefefe;
+    margin-right: 4px;
+}
+
+#subtab-AdminMpMassUpdateCombinations a:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f044";
+    color: #fefefe;
+    margin-right: 4px;
+}
+
+#subtab-AdminMpLangImport a:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f1ab";
+    color: #e45252;
+    margin-right: 4px;
+}

@@ -1,0 +1,40 @@
+{
+    "version": "1.0.0",
+    "name": "mpsoft/mporderreturn",
+    "description": "Nuovo modulo di stampa per il reso",
+    "authors": [
+        {
+            "name": "Massimiliano Palermo",
+            "email": "maxx.palermo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "tecnickcom/tcpdf": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "MpSoft\\MpOrderReturn\\": "src/"
+        },
+        "classmap": [],
+        "exclude-from-classmap": [],
+        "files": []
+    },
+    "config": {
+        "preferred-install": "dist",
+        "prepend-autoloader": false
+    },
+    "type": "prestashop-module",
+    "extra": {
+        "name": "MpOrderReturn",
+        "version": "1.0.0",
+        "author": "Massimiliano Palermo",
+        "author_email": "maxx.palermo@gmail.com",
+        "author_url": "https://www.maxpalermo.it",
+        "license": "AFL-3.0",
+        "url": "https://www.maxpalermo.it",
+        "readme": "README.md"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
