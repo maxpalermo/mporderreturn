@@ -30,6 +30,7 @@ use MpSoft\MpOrderReturn\Traits\InstallHooks;
 class MpOrderReturn extends Module
 {
     use InstallHooks;
+
     protected $id_lang;
 
     public function __construct()
@@ -46,7 +47,7 @@ class MpOrderReturn extends Module
 
         $this->displayName = $this->l('MP Stampa modulo reso');
         $this->description = $this->l('Sostituisce la stampa del modulo di reso');
-        $this->id_lang = (int)Context::getContext()->language->id;
+        $this->id_lang = (int) Context::getContext()->language->id;
     }
 
     public function install()
@@ -57,12 +58,13 @@ class MpOrderReturn extends Module
 
         $hooks = [
             'actionAdminControllerSetMedia',
+            'displayFooter',
             'displayBackOfficeFooter',
         ];
 
         $res =
-            parent::install()
-            && $this->installHooks($this, $hooks);
+            parent::install() &&
+            $this->installHooks($this, $hooks);
 
         return $res;
     }
@@ -83,7 +85,7 @@ class MpOrderReturn extends Module
     {
         $controller = Tools::getValue('controller');
         $moduleFrontController = $this->context->link->getModuleLink($this->name, 'OrderReturn');
-        if (preg_match('/AdminReturn/i', $controller) && $id_order_return = (int)Tools::getValue('id_order_return')) {
+        if (preg_match('/AdminReturn/i', $controller) && $id_order_return = (int) Tools::getValue('id_order_return')) {
             $tplPath = $this->getLocalPath() . 'views/templates/admin/order_return.tpl';
             $tpl = $this->context->smarty->createTemplate($tplPath);
             $tpl->assign([
@@ -91,6 +93,22 @@ class MpOrderReturn extends Module
                 'id_order_return' => $id_order_return,
                 'moduleFrontController' => $moduleFrontController,
             ]);
+
+            return $tpl->fetch();
+        }
+    }
+
+    public function hookDisplayFooter($params)
+    {
+        $controller = Tools::getValue('controller');
+        $moduleFrontController = $this->context->link->getModuleLink($this->name, 'OrderReturn');
+        if (preg_match('/orderfollow/i', $controller)) {
+            $tplPath = $this->getLocalPath() . 'views/templates/front/order-follow.tpl';
+            $tpl = $this->context->smarty->createTemplate($tplPath);
+            $tpl->assign([
+                'moduleFrontController' => $moduleFrontController,
+            ]);
+
             return $tpl->fetch();
         }
     }
